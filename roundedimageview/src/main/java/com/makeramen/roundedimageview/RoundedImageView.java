@@ -27,16 +27,14 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.net.Uri;
-import android.os.Build;
 import android.support.annotation.ColorInt;
 import android.support.annotation.DimenRes;
 import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.widget.ImageView;
 
 @SuppressWarnings("UnusedDeclaration")
-public class RoundedImageView extends ImageView {
+public class RoundedImageView extends ScalingImageView {
 
   // Constants for tile mode attributes
   private static final int TILE_MODE_UNDEFINED = -2;
