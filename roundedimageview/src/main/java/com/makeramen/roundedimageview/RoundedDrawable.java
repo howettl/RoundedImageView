@@ -139,6 +139,9 @@ public class RoundedDrawable extends Drawable {
       e.printStackTrace();
       Log.w(TAG, "Failed to create bitmap from drawable!");
       bitmap = null;
+    } catch (OutOfMemoryError e) {
+      Log.w(TAG, "Failed to create bitmap from drawable!", e);
+      bitmap = null;
     }
 
     return bitmap;
